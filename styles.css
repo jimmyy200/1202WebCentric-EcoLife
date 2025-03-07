@@ -1,11 +1,11 @@
 body{
-    background:linear-gradient(90deg, green,yellow);
+    background:linear-gradient(90deg, #4cbb17,#48872b,#4cbb17);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container{
-    display:flex;
-    flex-direction: column;
-    font-size: xx-large;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .navbar{
