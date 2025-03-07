@@ -1,0 +1,31 @@
+body{
+    background-color: lightgray;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    list-style-type: none;
+    padding: 1% 1%;
+    gap: 1% 1%;
+    text-align: center;
+    background-color: gold;
+    border: 10px solid purple;
+    align-content: space-evenly;
+    overflow: hidden;
+}
+
+.navbar a{
+    display: flex;
+    color: purple;
+    text-align: center;
+    font-size: 150%;
+}
+
+.navbar a:hover{
+    background-color: beige;
+}
