@@ -3,9 +3,10 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.container{
+.charities{
     display: grid;
     grid-template-columns: auto auto auto;
+    text-align: justify;
 }
 
 .navbar{
@@ -14,8 +15,8 @@ body{
     list-style-type: none;
     padding: 2% 2%;
     gap: 1% 1%;
-    background-color: gold;
-    border: 10px solid purple;
+    background-color: rgb(178, 234, 12);
+    border: 10px solid rgb(136, 136, 1);
     align-content: space-between;
 }
 
@@ -29,4 +30,19 @@ body{
 
 .navbar a:hover{
     background-color: beige;
+}
+
+#homeImg{
+    position: relative;
+    z-index: 1;
+    opacity: 90%;
+}
+
+#homeText{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0 0 5px #fff;
+    position: absolute;
+    z-index: 2;
+    top: 280px;
+    left: 180px;
 }
