@@ -36,6 +36,8 @@ body{
     position: relative;
     z-index: 1;
     opacity: 90%;
+    width: 90vw;
+    height: 50vh;
 }
 
 #homeText{
@@ -43,6 +45,14 @@ body{
     text-shadow: 0 0 5px #fff;
     position: absolute;
     z-index: 2;
-    top: 280px;
-    left: 180px;
+    top: 35vh;
+    left: 30vw;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    
 }
