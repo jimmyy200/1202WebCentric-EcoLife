@@ -58,7 +58,7 @@ h1 {
 
 }
 
-@media all and (min-device-width: 320px) and (max-device-width: 767px) {
+@media all and (min-device-width: 0px) and (max-device-width: 767px) {
     #homeText{
         display: none;
     }
