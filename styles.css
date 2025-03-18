@@ -9,6 +9,13 @@ h1 {
     text-shadow: 5px 0px 5px aquamarine;
 }
 
+#track{
+    display: grid;
+    margin: 5vw;
+    grid-template-columns: auto auto auto;
+    gap: 5vw;
+}
+
 @media all and (min-width:1024px){
     .charities{
         display: grid;
