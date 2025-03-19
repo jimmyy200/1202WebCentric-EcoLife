@@ -22,24 +22,27 @@
         </ul>
     </p>
     <h2>EcoLife Tracker</h2>
-    <p>
+    <p id="test">
         Coming Soon
     </p>
+    <form id="track" onsubmit="calculate(); return false">
+        <select id="transport">
+            <option value="car">Car</option>
+            <option value="train">Train</option>
+            <option value="walk">Walk</option>
+            <option value="bus">Bus</option>
+        </select>
+        <select id="meat">
+            <option value="beef">Beef</option>
+            <option value="pork">Pork</option>
+            <option value="chicken">Chicken</option>
+        </select>
+        <input type="submit">
+    </form>
     <div>
-        <form id="track">
-            <select id="transport">
-                <option value="car">Car</option>
-                <option value="train">Train</option>
-                <option value="walk">Walk</option>
-                <option value="bus">Bus</option>
-            </select>
-            <select id="meat">
-                <option value="beef">Beef</option>
-                <option value="pork">Pork</option>
-                <option value="chicken">Chicken</option>
-            </select>
-            <input type="submit">
-        </form>
+        <p id="result">
+
+        </p>
     </div>
 </body>
 </html>
