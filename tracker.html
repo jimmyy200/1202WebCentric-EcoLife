@@ -26,16 +26,19 @@
         Coming Soon
     </p>
     <form id="track" onsubmit="calculate(); return false">
+        <img src="" id="transImg">
+        <img src="images/beef.jpg" id="meatImg" width="200px">
+        <img src="" id="subImg">
         <select id="transport">
             <option value="car">Car</option>
             <option value="train">Train</option>
             <option value="walk">Walk</option>
             <option value="bus">Bus</option>
         </select>
-        <select id="meat">
-            <option value="beef">Beef</option>
-            <option value="pork">Pork</option>
-            <option value="chicken">Chicken</option>
+        <select id="meat" onchange="meatChange()">
+            <option value="beef" class="opt">Beef</option>
+            <option value="pork" class="opt">Pork</option>
+            <option value="chicken" class="opt">Chicken</option>
         </select>
         <input type="submit">
     </form>

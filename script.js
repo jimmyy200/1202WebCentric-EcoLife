@@ -32,3 +32,15 @@ function calculate(event){
     result.innerHTML += `<br>`;
     result.innerHTML += "The average person emits 4500kg of CO2 per year"
 };
+
+function meatChange(){
+    const meatV = meat.value;
+
+    if(meatV == "beef"){
+        meatImg.src = 'images/beef.jpg';
+    } else if (meatV == "pork"){
+        meatImg.src = 'images/pork.jpg';
+    } else if (meatV == "chicken"){
+        meatImg.src = 'images/chick.jpg';
+    }
+}
