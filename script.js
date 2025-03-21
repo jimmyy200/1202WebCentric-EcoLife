@@ -44,3 +44,17 @@ function meatChange(){
         meatImg.src = 'images/chick.jpg';
     }
 }
+
+function transportChange(){
+    const transV = transport.value;
+
+    if (transV == "car"){
+        transImg.src = 'images/car.jpg';
+    } else if (transV == "train"){
+        transImg.src = 'images/train.jpg';
+    } else if (transV == "walk"){
+        transImg.src = 'images/walk.jpg';
+    } else if (transV == "bus"){
+        transImg.src = 'images/bus.jpg';
+    }
+}

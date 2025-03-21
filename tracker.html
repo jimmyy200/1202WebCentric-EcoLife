@@ -26,10 +26,10 @@
         Coming Soon
     </p>
     <form id="track" onsubmit="calculate(); return false">
-        <img src="" id="transImg">
+        <img src="images/car.jpg" id="transImg" width="200px">
         <img src="images/beef.jpg" id="meatImg" width="200px">
         <img src="" id="subImg">
-        <select id="transport">
+        <select id="transport" onchange="transportChange()">
             <option value="car">Car</option>
             <option value="train">Train</option>
             <option value="walk">Walk</option>
