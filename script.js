@@ -58,3 +58,21 @@ function transportChange(){
         transImg.src = 'images/bus.jpg';
     }
 }
+
+function validateLogin(){
+    const user = username.value;
+    const pass = password.value;
+
+    if (user == ""){
+        alert("username should not be empty");
+        return;
+    }
+
+    if (pass == ""){
+        alert ("password should not be empty");
+        return;
+    }
+
+    alert("username and password are valid");
+    return;
+}
