@@ -18,8 +18,9 @@ h1 {
 }
 
 #result{
-    display:flex;
-    justify-content: center;
+    position: absolute;
+    top: 85vh;
+    left: 50vw;
 }
 
 @media all and (min-width:1024px){
@@ -67,6 +68,12 @@ h1 {
         z-index: 2;
         top: 35vh;
         left: 30vw;
+    }
+
+    #homeAni{
+        position: absolute;
+        top: 37.6vh;
+        left: 70vw;
     }
 
 }

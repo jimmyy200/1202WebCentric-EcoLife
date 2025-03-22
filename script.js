@@ -1,4 +1,8 @@
-function calculate(event){
+/**
+ * Calculates an approximate CO2 emission based on what transport 
+ * and type of meat the user uses/eats the most
+ */
+function calculate(){
     var total = 0;
     var meatV = meat.value;
     var transV = transport.value;
@@ -27,12 +31,18 @@ function calculate(event){
     } else {
         total += 0;
     }
-
+    
+    result.display = "none";
     result.innerHTML = "You approximately emit " + total + "kg of CO2 per year";
     result.innerHTML += `<br>`;
     result.innerHTML += "The average person emits 4500kg of CO2 per year"
+    animateResult();
 };
 
+/**
+ * Changes the image of the type of meat displayed
+ * based on what the user has chosen
+ */
 function meatChange(){
     var meatV = meat.value;
 
@@ -45,6 +55,10 @@ function meatChange(){
     }
 }
 
+/**
+ * Changes the image of the type of transport displayed
+ * based on what the user has chosen
+ */
 function transportChange(){
     var transV = transport.value;
 
@@ -59,6 +73,10 @@ function transportChange(){
     }
 }
 
+/**
+ * Validates login info
+ * Empty passwords and empty usernames are invalid
+ */
 function validateLogin(){
     var user = username.value;
     var pass = password.value;
@@ -75,4 +93,44 @@ function validateLogin(){
 
     alert("username and password are valid");
     return;
+}
+
+/**
+ * Animates the home text on the home page
+ */
+function animateHome(){
+    var pos = 0;
+    var temp = null;
+    var el = document.getElementById('homeText');
+    el.style.top = '0px';
+    clearInterval(temp);
+    temp = setInterval(frame, 15);
+    function frame(){
+        if (pos == 35){
+            clearInterval(temp);
+        } else {
+            pos++;
+            el.style.top = pos + 'vh';
+        }
+    }
+}
+
+/**
+ * Animates the result from the calculations on the tracker page
+ */
+function animateResult(){
+    var pos = 0;
+    var temp = null;
+    var el = document.getElementById('result');
+    el.style.left = '0px';
+    clearInterval(temp);
+    temp = setInterval(frameRes, 5);
+    function frameRes(){
+        if (pos == 35){
+            clearInterval(temp);
+        } else {
+            pos++;
+            el.style.left = pos + 'vw';
+        }
+    }
 }
