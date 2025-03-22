@@ -34,7 +34,7 @@ function calculate(event){
 };
 
 function meatChange(){
-    const meatV = meat.value;
+    var meatV = meat.value;
 
     if(meatV == "beef"){
         meatImg.src = 'images/beef.jpg';
@@ -46,7 +46,7 @@ function meatChange(){
 }
 
 function transportChange(){
-    const transV = transport.value;
+    var transV = transport.value;
 
     if (transV == "car"){
         transImg.src = 'images/car.jpg';
@@ -60,8 +60,8 @@ function transportChange(){
 }
 
 function validateLogin(){
-    const user = username.value;
-    const pass = password.value;
+    var user = username.value;
+    var pass = password.value;
 
     if (user == ""){
         alert("username should not be empty");
