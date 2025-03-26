@@ -19,6 +19,7 @@ h1 {
 
 #result{
     position: absolute;
+    display: flex;
     top: 85vh;
     left: 50vw;
 }
